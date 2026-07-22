@@ -307,43 +307,46 @@
   }
 
   /* ---------- work ---------- */
+  #work.block{ padding: 84px 0; }
+  #work .section-head h2{ font-size: 34.5px; }
+  #work .section-tag{ font-size: 12.65px; }
   .work-list{
     display:flex;
     flex-direction: column;
   }
   .work-item{
     display:grid;
-    grid-template-columns: 90px 1fr auto;
-    gap: 24px;
+    grid-template-columns: 104px 1fr auto;
+    gap: 30px;
     align-items: center;
-    padding: 26px 0;
+    padding: 34px 0;
     border-top: 1px solid var(--line-soft);
   }
   .work-item:last-child{ border-bottom: 1px solid var(--line-soft); }
   .work-roll{
     font-family: var(--font-mono);
-    font-size: 12px;
+    font-size: 13.8px;
     color: var(--muted);
     letter-spacing: 0.06em;
   }
   .work-roll b{
     display:block;
     font-family: var(--font-display);
-    font-size: 30px;
+    font-size: 34.5px;
     color: var(--paper-dim);
     font-weight: 800;
   }
   .work-title{
     font-family: var(--font-display);
     font-weight: 800;
-    font-size: 24px;
+    font-size: 27.6px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: var(--paper);
     margin: 0 0 6px;
   }
   .work-desc{
-    font-size: 14px;
+    font-size: 16.1px;
     color: var(--muted);
     max-width: 480px;
     line-height: 1.55;
@@ -354,12 +357,12 @@
   }
   .work-link{
     font-family: var(--font-mono);
-    font-size: 12px;
+    font-size: 13.8px;
     letter-spacing: 0.06em;
     text-decoration: none;
     color: var(--paper);
     border: 1px solid var(--line);
-    padding: 10px 16px;
+    padding: 12px 18px;
     white-space: nowrap;
     transition: border-color .15s ease;
     background: transparent;
@@ -374,8 +377,8 @@
   }
   .work-thumb{
     position: relative;
-    width: 104px;
-    height: 68px;
+    width: 148px;
+    height: 96px;
     flex-shrink: 0;
     border: 1px solid var(--line);
     overflow: hidden;
@@ -396,7 +399,7 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 13px;
+    font-size: 17px;
     background: rgba(21,23,27,0.28);
     transition: background .15s ease;
   }
