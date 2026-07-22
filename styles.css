@@ -507,3 +507,37 @@
   .frame.reverse .frame-img,
   .frame.reverse .frame-text{ order: initial; }
 }
+
+/* ---------- trusted-by logo strip ---------- */
+.logo-strip{
+  padding: 40px 0;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg-panel);
+}
+.logo-strip-label{
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 24px;
+}
+.logo-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  flex-wrap: wrap;
+}
+.brand-logo{
+  height: 34px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+  filter: grayscale(1) brightness(2.2) opacity(0.65);
+  transition: filter 0.25s ease;
+}
+.brand-logo:hover{
+  filter: grayscale(0) brightness(1) opacity(1);
+}
