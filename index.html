@@ -23,7 +23,7 @@
       <a class="brand" href="index.html">MM <span>·</span> PRODUCTION</a>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="index.html#work">Work</a></li>
+        <li><a href="work.html">Work</a></li>
         <li><a href="on-set.html">On Set</a></li>
         <li><a href="index.html#contact">Contact</a></li>
       </ul>
@@ -49,7 +49,7 @@
               <div class="hero-actions">
                 <a class="btn primary" href="mailto:mm.montasser@hotmail.com">Email Me</a>
                 <a class="btn" href="tel:+97433828108">+974 3382 8108</a>
-                <a class="btn" href="#work">View Work ↓</a>
+                <a class="btn" href="work.html">View Work ↓</a>
               </div>
             </div>
             <div class="slate-photo">
@@ -111,105 +111,6 @@
         <img src="logos/rafeeq.png" alt="Rafeeq" class="brand-logo">
         <img src="https://companieslogo.com/img/orig/DHBK.QA_BIG-c0609cbf.png" alt="Doha Bank" class="brand-logo">
       </div>
-    </div>
-  </section>
-
-  <section class="block" id="work">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Selected Work</h2>
-        <span class="section-tag">REEL LOG — 4 ROLLS</span>
-      </div>
-      <div class="work-list">
-        <div class="work-item">
-          <div class="work-roll">ROLL<b>01</b></div>
-          <div class="work-info">
-            <button type="button" class="work-thumb" data-video="videos/tkh.mp4" data-title="TKH" aria-label="Play TKH reel">
-              <video class="work-thumb-video" src="videos/tkh.mp4" muted loop playsinline autoplay preload="metadata"></video>
-              <span class="work-thumb-play" aria-hidden="true">▶</span>
-            </button>
-            <p class="work-title">TKH</p>
-          </div>
-          <button type="button" class="work-link work-play-trigger" data-video="videos/tkh.mp4" data-title="TKH">Watch →</button>
-        </div>
-        <div class="work-item">
-          <div class="work-roll">ROLL<b>02</b></div>
-          <div class="work-info">
-            <button type="button" class="work-thumb" data-video="videos/rafeeq.mp4" data-title="Rafeeq" aria-label="Play Rafeeq reel">
-              <video class="work-thumb-video" src="videos/rafeeq.mp4" muted loop playsinline autoplay preload="metadata"></video>
-              <span class="work-thumb-play" aria-hidden="true">▶</span>
-            </button>
-            <p class="work-title">Rafeeq</p>
-          </div>
-          <button type="button" class="work-link work-play-trigger" data-video="videos/rafeeq.mp4" data-title="Rafeeq">Watch →</button>
-        </div>
-        <div class="work-item">
-          <div class="work-roll">ROLL<b>03</b></div>
-          <div class="work-info">
-            <button type="button" class="work-thumb" data-video="videos/doha-bank.mp4" data-title="Doha Bank" aria-label="Play Doha Bank reel">
-              <video class="work-thumb-video" src="videos/doha-bank.mp4" muted loop playsinline autoplay preload="metadata"></video>
-              <span class="work-thumb-play" aria-hidden="true">▶</span>
-            </button>
-            <p class="work-title">Doha Bank</p>
-          </div>
-          <button type="button" class="work-link work-play-trigger" data-video="videos/doha-bank.mp4" data-title="Doha Bank">Watch →</button>
-        </div>
-        <div class="work-item">
-          <div class="work-roll">ROLL<b>04</b></div>
-          <div class="work-info">
-            <button type="button" class="work-thumb" data-video="videos/edition-one-auto.mp4" data-title="Edition One Auto" aria-label="Play Edition One Auto reel">
-              <video class="work-thumb-video" src="videos/edition-one-auto.mp4" muted loop playsinline autoplay preload="metadata"></video>
-              <span class="work-thumb-play" aria-hidden="true">▶</span>
-            </button>
-            <p class="work-title">Edition One Auto</p>
-          </div>
-          <button type="button" class="work-link work-play-trigger" data-video="videos/edition-one-auto.mp4" data-title="Edition One Auto">Watch →</button>
-        </div>
-      </div>
-
-      <!-- Video lightbox: opened when a work reel thumbnail/button is clicked -->
-      <div class="video-lightbox" id="videoLightbox">
-        <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close video">×</button>
-        <div class="lightbox-inner">
-          <p class="lightbox-title" id="lightboxTitle"></p>
-          <video id="lightboxVideo" controls playsinline></video>
-        </div>
-      </div>
-
-      <script>
-        (function(){
-          var lightbox = document.getElementById('videoLightbox');
-          var video = document.getElementById('lightboxVideo');
-          var titleEl = document.getElementById('lightboxTitle');
-          var closeBtn = document.getElementById('lightboxClose');
-
-          document.querySelectorAll('[data-video]').forEach(function(el){
-            el.addEventListener('click', function(){
-              video.src = el.getAttribute('data-video');
-              titleEl.textContent = el.getAttribute('data-title') || '';
-              lightbox.classList.add('open');
-              document.body.classList.add('lightbox-locked');
-              video.play();
-            });
-          });
-
-          function closeLightbox(){
-            video.pause();
-            video.removeAttribute('src');
-            video.load();
-            lightbox.classList.remove('open');
-            document.body.classList.remove('lightbox-locked');
-          }
-
-          closeBtn.addEventListener('click', closeLightbox);
-          lightbox.addEventListener('click', function(e){
-            if (e.target === lightbox) closeLightbox();
-          });
-          document.addEventListener('keydown', function(e){
-            if (e.key === 'Escape') closeLightbox();
-          });
-        })();
-      </script>
     </div>
   </section>
 
