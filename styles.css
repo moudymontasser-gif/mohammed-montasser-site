@@ -626,6 +626,24 @@
   .frame.reverse .frame-text{ order: initial; }
 }
 
+/* ---------- intro reel (hero showreel) ---------- */
+.intro-reel{
+  padding: 0 0 64px;
+  border-bottom: 1px solid var(--line);
+}
+.intro-reel-frame{
+  position: relative;
+  border: 1px solid var(--line);
+  background: #000;
+  overflow: hidden;
+}
+.intro-reel-frame video{
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+}
+
 /* ---------- trusted-by logo strip ---------- */
 .logo-strip{
   padding: 40px 0;
